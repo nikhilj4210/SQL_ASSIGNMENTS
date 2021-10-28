@@ -1,0 +1,36 @@
+package com.sonata_Day1;
+
+import java.util.Scanner;
+
+public class SearchSpecificValue {
+	public static void main(String[] args) {
+	
+	Scanner scan = new Scanner(System.in);
+		System.out.println("Enter the length of array");
+		int n= scan.nextInt();
+		int arr[]= new int[n];
+		System.out.println("Enter the array contents");
+		 // Give elements as input to array
+		for( int i=0; i<=arr.length-1; i++)
+		{
+			arr[i]= scan.nextInt();
+		}
+		
+		// Specify  the number to be searched in array
+                System.out.println("Enter the key to searched");
+                int key= scan.nextInt();
+
+              //loop through the array elements
+              for(int i=0;i<=arr.length-1;i++)
+              {
+           	  if( key==arr[i])
+	          {
+		   System.out.println("Key is found at index"+" "+i);
+	           System.exit(0);
+	          }
+
+             }
+             System.out.println("Key not found");
+
+	}
+}

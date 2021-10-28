@@ -1,0 +1,23 @@
+package com.sonata_Day1;
+
+import java.util.Scanner;
+
+public class ReplaceVowels {
+public static void main(String[] args) {
+	        
+                Scanner scan=new Scanner(System.in);
+	        System.out.println("enter the string");
+	        String st=scan.nextLine();
+	        char ch[]=st.toCharArray();
+	        for (int i = 0; i < ch.length; i++)
+	        {
+	               if (ch[i]=='a'||ch[i]=='e'||ch[i]=='i'||ch[i]=='o'||ch[i]=='u'|| 
+	            		   ch[i]=='A'||ch[i]=='E'||ch[i]=='I'||ch[i]=='O'||ch[i]=='U')
+	               {
+	                ch[i]='$'; //replacing $ in the place of vowels
+	               }   
+	        }
+	        st=new String(ch);
+	        System.out.println(st);
+	    }
+}
